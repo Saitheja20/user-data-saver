@@ -1,0 +1,36 @@
+<!-- <button (click)="updateData()">Save Data</button>
+<h1>{{messages}}</h1>
+<button (click)="onClick()">onclick</button>
+<h1>{{message()}}</h1> -->
+<app-header/>
+<app-user-input (data)="showData($event)"/>
+<img [src]="this.image" alt="not showing image"/>
+
+
+@if($event){
+  <p>Enter your data to view</p>
+}@else {
+<!-- <p>{{name}}</p>
+<p>{{email}}</p>
+<p>{{phoneNumber}}</p>
+<p>{{address}}</p> -->
+
+<table border="2" >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{phoneNumber}}</td>
+      <td>{{address}}</td>
+    </tr>
+  </tbody>
+</table>
+}

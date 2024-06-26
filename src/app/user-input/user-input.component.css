@@ -1,0 +1,38 @@
+div{
+
+}
+
+form
+{
+  text-align: center;
+  display: block;
+  width: 500px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+background-color: rgb(179, 255, 255);
+}
+.space{
+  display: flex;
+  float: inline-end;
+}
+button{
+  background-color: greenyellow;
+  width: fit-content;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 2px;
+}
+button:hover{
+  background-color: rgb(32, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+input{
+  border: 1px solid black;
+  border-radius: 2px;
+}
+input.image{
+  cursor: pointer;
+}
